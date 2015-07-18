@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ABCDEF"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ListView 
+            android:id="@+id/moodList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/refreshButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="26dp"
+            android:background="#00000000"
+            android:paddingLeft="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:src="@drawable/refresh"/>
+           
+        <ImageButton 
+            android:id="@+id/newMoodButton"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="26dp"
+            android:background="#00000000"
+            android:paddingLeft="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+	        android:src = "@drawable/new_mood"/>
+    </LinearLayout>
+</LinearLayout> 

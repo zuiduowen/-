@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learngodplan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.VIBRATE" />  
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/learngod_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.learngodplan.module.home.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.learngodplan.module.plan.InstantTaskActivity"></activity>
+        
+        <activity android:name="com.learngodplan.module.monitor.PopActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <service android:name="com.learngodplan.module.monitor.CompulsoryService"></service>
+        <activity android:name="com.learngodplan.module.plan.NewPlanActivity"></activity>
+        <activity android:name="com.learngodplan.alarm.AlarmActivity"></activity>
+        <activity android:name="com.learngodplan.module.plan.PlanInfomationActivity"></activity>
+        <activity android:name="com.learngodplan.module.pet.PetAdoptActivity"></activity>
+        <activity android:name="com.learngodplan.module.mood.LogRegActivity"
+                     android:theme="@android:style/Theme.Holo.NoActionBar"></activity>
+        <activity android:name="com.learngodplan.module.mood.AddMoodActivity"></activity>
+        <activity android:name="com.learngodplan.module.home.OpenAnimation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
